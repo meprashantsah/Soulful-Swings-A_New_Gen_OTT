@@ -1,0 +1,48 @@
+/* Progress Bar Styles */
+.progress-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #555;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 10px auto;
+  max-width: 400px;
+}
+
+/* Custom Progress Animation */
+.progress {
+  animation: progress-animation 3s linear forwards;
+}
+
+@keyframes progress-animation {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Custom animation for speech bubble */
+@keyframes bubble-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.speech-bubble.active {
+  animation: bubble-animation 1s infinite;
+}
+
+

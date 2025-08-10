@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+
+  watchparty-client:
+    build: ./watchparty-client
+    ports:
+      - "3000:80"
+    depends_on:
+      - node-server
+
+  node-server:
+    build: ./gemini-server
+    ports:
+      - "5000:5000"
+    restart: always
+    environment:
+      - NODE_ENV=production
+
+  python-script:
+    build: ./recommendation-model
+    volumes:
+      - ./recommendation-model:/app
+    restart: always
+    environment:
+      - PYTHONUNBUFFERED=1

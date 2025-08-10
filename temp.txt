@@ -1,0 +1,6 @@
+type
+genre
+production_countries
+age cerrtification
+run time
+

@@ -1,0 +1,83 @@
+.movie-details-container {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .search-box {
+    margin: 20px 0;
+  }
+  
+  .search-box input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .search-box button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .search-box button:hover {
+    background-color: #0056b3;
+  }
+  
+  .error-message {
+    color: red;
+    margin: 10px 0;
+  }
+  
+  .movie-details {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+  }
+  
+  .movie-poster {
+    width: 300px;
+    border-radius: 10px;
+  }
+  
+  .movie-info {
+    max-width: 400px;
+    text-align: left;
+  }
+  
+  .movie-info h2 {
+    margin-top: 0;
+  }
+  
+  .movie-info p {
+    margin: 5px 0;
+  }
+  
+  .plot-setting {
+    font-style: italic;
+    color: #555;
+    margin: 15px 0;
+  }
+
+  .speak-button {
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .speak-button:hover {
+    background-color: #218838;
+  }
+  

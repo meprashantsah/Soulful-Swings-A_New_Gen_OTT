@@ -1,0 +1,114 @@
+/* Full-screen loader background */
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  flex-direction: column;
+}
+
+.loader-background {
+  text-align: center;
+}
+
+/* Progress bar container with fixed width */
+.progress-bar {
+  width: 300px; /* Fixed width */
+  height: 10px;
+  background-color: grey;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  margin: 0 auto;
+}
+
+.progress {
+  height: 100%;
+  width: 0%;
+  background-color: red;
+  animation: progressAnimation 20s linear forwards;
+}
+
+/* Blinking text and rotating icon container */
+.blinking-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Rotating settings icon */
+.rotating-icon {
+  font-size: 2rem;
+  animation: rotateIcon 1s linear infinite;
+}
+
+/* Blinking text */
+.blinking-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  animation: blinkingText 1s infinite;
+}
+
+/* Keyframes for rotating icon */
+@keyframes rotateIcon {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Blinking text animation */
+@keyframes blinkingText {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Progress bar animation */
+@keyframes progressAnimation {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Main content styling */
+.recommendation-content {
+  padding: 20px;
+  text-align: center;
+  color: black;
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.movie-card {
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #f4f4f4;
+}
+
+.movie-poster {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
